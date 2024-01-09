@@ -45,14 +45,14 @@ export default function Card({ info }: { info: Card }) {
       >
         {!action ? (
           <>
-            <div className="flex w-full justify-between flex-row ">
+            <div className="flex w-full justify-between items-center flex-row ">
               <Image
                 alt="suplier_logo"
                 src={supplierImages[info.supplier]}
-                className="w-[33%]"
+                className="w-[35%]"
               ></Image>
-              <div className="flex bg-[#010101CC]/[0.8] h-full rounded-md p-1">
-                <Image className="flex" alt="info" src={info_img}></Image>
+              <div className="flex bg-[#010101CC]/[0.8] h-7 rounded-md p-1">
+                <Image className="flex " alt="info" src={info_img}></Image>
               </div>
             </div>
 
@@ -73,7 +73,7 @@ export default function Card({ info }: { info: Card }) {
             <Image
               alt="suplier_logo"
               src={supplierImages[info.supplier]}
-              className="w-[28%]"
+              className="w-[35%]"
             ></Image>
             <div className="flex flex-col">
               <span className="font-bold text-xl">{info.name}</span>
@@ -91,9 +91,9 @@ export default function Card({ info }: { info: Card }) {
                 </div>
                 <div
                   onClick={handleAction}
-                  className="flex cursor-pointer  bg-[#010101CC]/[0.8] h-full rounded-md p-1"
+                  className="flex cursor-pointer  bg-[#010101CC]/[0.8] h-7 rounded-md p-1"
                 >
-                  <Image className="flex" alt="info" src={info_img}></Image>
+                  <Image className="flex " alt="info" src={info_img}></Image>
                 </div>
               </div>
             </div>
